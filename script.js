@@ -94,15 +94,22 @@
 // console.log(num)
 
 
-let num = 1234654675753445;
-let rev = 0;
+// let num = 44441111;
+// let rev = 0;
 
-while (num) {
-    let tem = num % 10;
-    rev = rev * 10 + tem;
-    num = Math.floor(num / 10)
-}
-console.log(rev);
+// while (num) {
+//     let tem = num % 10;
+//     rev = rev + tem;
+//     num = Math.floor(num / 10)
+// }
+// console.log(rev);
+
+let ar = [2,3,3,3 ,2, 1,1];
+// simlier element extract out in new arr ; 
+// count the similierity 
+// max repeated element 
+ //min repeated element 
+
 
 
 
