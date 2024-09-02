@@ -104,11 +104,11 @@
 // }
 // console.log(rev);
 
-let ar = [2,3,3,3 ,2, 1,1];
+let ar = [2, 3, 3, 3, 2, 1, 1];
 // simlier element extract out in new arr ; 
 // count the similierity 
 // max repeated element 
- //min repeated element 
+//min repeated element 
 
 
 
@@ -122,3 +122,65 @@ let ar = [2,3,3,3 ,2, 1,1];
 // }
 // let str = num.toString().split("").reverse().join("");
 // console.log(Number(str));
+
+let obj = { name: "gagan", age: 33, address: "indore", skill: ["react", "javascript", "node"] }
+
+let data = [
+    { name: "gagan", age: 33, address: "indore", skill: ["react", "javascript", "node"] },
+    { name: "raj", age: 33, address: "indore", skill: ["react", "javascript", "node"] },
+    { name: "vishal", age: 33, address: "indore", skill: ["react", "javascript", "node"] },
+    { name: "zunaid", age: 33, address: "indore", skill: ["react", "javascript", "node"] },
+    { name: "shaad", age: 33, address: "indore", skill: ["react", "javascript", "node"] },
+]
+
+
+// for in loop 
+// i =  index (in array)
+// i == key (in object)
+// in loop is working for array , object , string
+// for (let i in data) {
+//    console.log(data[i])
+// }
+
+// i== value
+// of loop is working only for arrary and strings  
+for (let i of data) {
+    console.log(i)
+}
+
+let str = "javascript";
+for (let i in str) {
+    console.log(str[i])
+}
+
+
+// class,
+// Object
+// inheritance
+//  polymorpism
+// abstraction
+// encapsulation
+
+
+
+// for (let key in obj) {
+//     console.log(obj[key])
+// }
+// for (let i =0; i < data.length; i++) {
+//     document.write(data[i].name+" " + data[i].age+" "+ data[i].address," ",'<br>')
+// }
+
+// document.getElementById("data").innerHTML = data.map((v) => {
+//     return `
+//    <div class="box">
+//     <h1> Name : ${v.name}</h1>
+//     <h2> age : ${v.age}</h2>
+//     <h2> address : ${v.address}</h2>
+//     <h2> skill :  <ul>  ${v.skill.map((value) => {
+//         return `<li> ${value}</li>`
+//     }).join("")}
+//     </ul></h2>
+//    </div>`
+// }).join("");
+
+
