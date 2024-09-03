@@ -232,12 +232,7 @@ class company {
         this.employename = a;
         this.employeid = b;
         this.employesalary = c;
-    }
-    get getemployeid() {
-        return this.employeid;
-    }
-    set empolyid(a) {
-        this.employeid = a
+        console.log("hello company construtor")
     }
     employecard() {
         return `
@@ -250,13 +245,28 @@ class company {
     }
 }
 
+// inheritance
+// child 
+class companypolicy extends company {
+    constructor(a, b, c, d, e) {
+        console.log("child constructor")
+        super(a, b, c, d)
+        this.employeleave = e
+    }
+    info() {
+        return `
+         <div class="card"> 
+        ${super.employecard()} 
+        <h1> leave count ${this.employeleave}</h1>
+        </div>`
+    }
+}
 
-let card = new company("raj", 123, 100000, 77);
-let card2 = new company("ani", 1244, 343434, 88)
-document.write(card2.employecard());
-console.log(card2.getemployeid)
-card.empolyid = 555;
-document.write(card.employecard());
+let card = new companypolicy("raj", 123, 100000, 77, 12);
+document.write(card.employecard())
+document.write(card.info())
+
+
 
 
 
