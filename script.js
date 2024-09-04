@@ -264,10 +264,93 @@ class companypolicy extends company {
 
 let card = new companypolicy("raj", 123, 100000, 77, 12);
 document.write(card.employecard())
-document.write(card.info())
+document.write(card.info());
+
+
+
+// class
+// Object,
+// inheitance
+// polymorphism
+// abstraction
+// encapsulation
+
+// obj2.empolyecard()  out = "first"
+// obj1.empolyecard()  out = "second"
+// obj3.empolyecard()  out = "third";
+
+
+class employe {
+    constructor(a, b, c) {
+        this.salary = a;
+        this.incentive = b;
+        this.extra = c;
+    }
+    leave() {
+        console.log("leave")
+    }
+    normalemployee() {
+        console.log("normalemployyee", this.salary)
+    }
+    manager() {
+        console.log("manage", this.salary + this.incentive)
+    }
+    headofoffice() {
+        console.log("head", this.salary + this.incentive + this.extra)
+    }
+}
+
+let obj = new employe(5000, 1000, 2000);
+obj.normalemployee();
+obj.manager()
+obj.headofoffice();
 
 
 
 
 
+//  Abstraction in JavaScript is a technique that reduces complexity in software systems 
+//  by hiding technical details and showing only the functionality. It's a fundamental 
+//  concept in object-oriented programming (OOP).
 
+
+// // Encapsulation in JavaScript refers to the practice of wrapping data and behavior 
+// within a single entity, known as an object and limiting external access to the object's
+// internal state. This helps to protect the data and behavior from external interference
+// and misuse.
+
+class task {
+    constructor(a) {
+        this.internal = a
+    }
+
+    test(a, b) {
+        return a + b
+    }
+    check(a, b) {
+        console.log(this.test(a, b))
+    }
+
+
+}
+let o = new task();
+o.check(33, 66)
+
+class Person {
+    #name;
+    constructor(name) {
+        this.#name = name;
+        this.gagan = "hello"
+    }
+    get Name() {
+        return this.#name;
+    }
+    set Name(newName) {
+        this.#name = newName;
+    }
+    static fun(a) {
+        console.log(a)
+    }
+}
+// const person = new Person("John Doe");
+Person.fun("elon")
