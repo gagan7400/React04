@@ -354,3 +354,9 @@ class Person {
 }
 // const person = new Person("John Doe");
 Person.fun("elon")
+
+// modules
+
+// transfer of data from multiple files  
+
+// document.write("hello testing")
